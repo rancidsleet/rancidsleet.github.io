@@ -1,0 +1,32 @@
+title: rancidsleet
+baseurl: "/" # the subpath of your site, e.g. /blog
+
+baseurl_permalink: "/"
+
+nav_title: ~/ctf-writeups
+
+plugins:
+  - jekyll-feed
+
+collections:
+  writeups:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: "_writeups"
+    values:
+      layout: "writeup"
+
+sass:
+  style: compressed
+
+exclude: ["README.md"]
+highlighter: rouge
+
+feed:
+  path: "posts.xml" # posts do not exist
+  collections:
+    writeups:
+      path: "atom.xml"

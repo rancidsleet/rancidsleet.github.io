@@ -1,0 +1,16 @@
+// @import "colours":
+// @media (prefers-color-scheme: dark) {
+	:root {
+		--bkgd: #{$charcoal};
+		--bkgd-fade: #{rgba($white, 0.1)};
+		--heading: #{$lavendar};
+		--heading-secondary: #{$silver};
+		--text: #{$white};
+		--link: #{$lavendar};
+		--link-fade: #{rgba($lavendar, 0.7)};
+		--highlight: #{$lighter-green};
+	}
+	.dark-invert {
+		filter: #{"invert()"};
+	}
+// }

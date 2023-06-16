@@ -1,0 +1,130 @@
+.note {
+	margin-top: 3rem;
+	overflow-y: auto;
+	max-height: unset;
+	max-width: unset;
+
+	&__date {
+		color: $silver;
+		margin: 0;
+		font-size: 1rem;
+	}
+
+	+ footer {
+		margin: 1rem 0 2.3rem;
+		max-width: unset;
+
+		@media (max-width: 400px) {
+			margin-bottom: 2rem;
+		}
+	}
+	img {
+		max-width: 700px;
+		max-height: 50vh;
+		min-height: 200px;
+	}
+	@extend %scrollbar;
+
+	pre.highlight {
+		overflow-x: auto;
+		@extend %scrollbar;
+	}
+
+	ul {
+		line-height: 1.7;
+	}
+	p, li {
+		> code {
+			background: rgba(white,0.07);
+			border-radius: 5px;
+			padding: 1px 3px;
+		}
+	}
+
+	table {
+		// overflow scrolling
+		display: block;
+		max-width: -moz-fit-content;
+		max-width: fit-content;
+		overflow-x: auto;
+
+		&.w-auto {
+			width: auto;
+			display: inline-table;
+			margin-right: 3.5rem;
+		}
+		&.no-border {
+			width: 100%;
+			td {
+				padding: 2.5px;
+			}
+			a {
+				border-bottom: transparent;
+			}
+		}
+
+		th {
+			text-align: left;
+		}
+		td {
+			padding-right: 1rem;
+		}
+	}
+	.multi-table-wrapper {
+		display:flex; 
+		justify-content:space-around; 
+		flex-wrap: wrap;
+	}
+	dl {
+		dt {
+			margin-top: 1rem;
+		}
+		dd {
+			p {
+				font-size: revert;
+				margin: unset;
+				code {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	fieldset {
+		width: max-content;
+		border: 1px solid rgba(255,255,255,0.5);
+
+		legend {
+			$s: 10px;
+			$p: 6px;
+			padding: 0 $p;
+			margin-left: $s - $p;
+		}
+		ul {
+			margin: -2px 0 4px;
+			padding-left: 1.5rem;
+		}
+		a, li {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+.note, .note + footer {
+	padding-left: calc(50% - min(500px, 40%));
+	padding-right: calc(50% - min(500px, 40%));
+	width: 100%;
+}
+
+main small {
+	&, & a, & p {
+		font-size: smaller;
+	}
+}
+.muted {
+	opacity: 0.6;
+}
+.overflow-img {
+	overflow: auto;
+	@extend %scrollbar;
+}

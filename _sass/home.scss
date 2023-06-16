@@ -1,0 +1,29 @@
+.list {
+	// height: calc(100% - 5rem);
+	// overflow-y: auto;
+	// max-width: 800px;
+	// margin: 0 auto;
+	@extend %scrollbar;
+
+	&__title {
+		width: 100%;
+		padding: 1rem;
+		font-size: 1.5rem;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: $bkgd-fade;
+		}
+	}
+
+	li:not(:first-child) {
+		margin-top: 10px;
+	}
+
+	&__date {
+		color: $silver;
+		font-style: italic;
+		margin: 5px 0 0;
+		font-size: 1rem;
+	}
+}

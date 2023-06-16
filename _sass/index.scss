@@ -1,0 +1,52 @@
+@import "colours";
+@import "utils";
+@import "text.scss";
+@import "home.scss";
+@import "note.scss";
+@import "root-vars.scss";
+@import "dark-mode.scss";
+@import "search.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $bkgd;
+	color: $text;
+	font-family: "Open Sans", sans-serif;
+	font-weight: lighter;
+	margin: 0;
+	padding: 0.7rem 1.5rem;
+	// height: 100vh;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// flex-flow: column nowrap;
+}
+
+main, footer {
+	width: 80%;
+	max-width: 1000px;
+}
+main {
+	max-height: min(550px, 70%);
+}
+footer {
+	margin: 1.5rem 0;
+	span {
+		opacity: 0.75;
+
+		&:hover {
+			opacity: 1;
+		}
+		&:only-child {
+			@extend %no-user-select;
+		}
+	}
+}
+
+::selection {
+	background-color: $highlight;
+	color: white;
+}

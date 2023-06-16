@@ -1,0 +1,29 @@
+$brown-drk: #6F2B17; 
+$brown-med: #986a2f; 
+$brown-lgt: #d6cfc8; 
+$mauve: #782b4c;
+$black: #042a2b;
+$light-red-brown: #bd8b8b;
+
+// grey is lighter than gray
+$grey: #7e858b;
+$gray: #48433f;
+
+// dark mode
+$white: #FFFCF2;
+$charcoal: #373432;
+$green: #00A676;
+$lavendar: #C2AFF0;
+// $purple: #615482;
+$silver: #969EB0;
+$lighter-green: #497367;
+
+// variables
+$bkgd: unquote("var(--bkgd)");
+$bkgd-fade: unquote("var(--bkgd-fade)");
+$head: unquote("var(--heading)");
+$head2: unquote("var(--heading-secondary)");
+$text: unquote("var(--text)");
+$link: unquote("var(--link)"); 
+$link-fade: unquote("var(--link-fade)"); 
+$highlight: unquote("var(--highlight)"); 

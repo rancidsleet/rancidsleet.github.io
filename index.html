@@ -1,0 +1,25 @@
+---
+title: rancidsleet
+layout: home
+---
+
+<div class="list">
+	<ul>
+		{%- for note in site.writeups reversed -%}
+			<li class="list__node" data-tags="{{ note.title }},{{ note.tags }}">
+				<a href="{{ note.url | relative_url }}">
+					<!-- <div class="list__title"> -->
+						<span>{{ note.title }}</span>
+					<!-- </div> -->
+				</a>
+				<br><p class="list__date">{{ note.date | date_to_string }}</p>
+				<!--
+				{%- if forloop.last != true -%}
+					<hr>
+				{%- endif -%} -->
+			</li>
+		{%- endfor -%}
+	</ul>
+</div>
+<input id="searchbar" onkeyup="filter(this.value)" placeholder="search...">
+<script src="{{ 'assets/js/search.js' | relative_url }}"></script>

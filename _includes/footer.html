@@ -1,0 +1,12 @@
+<footer {% if include.center %} class="center" {% endif %}>
+	{%- if include.data -%}
+		{%- for item in site.data.footer -%}
+			<span><a href="{{ item.link }}">{{ item.text }}</a></span>
+			{%- if forloop.last != true -%}
+				<span>&nbsp;|&nbsp;</span>
+			{%- endif -%}
+		{%- endfor -%}
+	{%- else -%}
+		<span><a href="{{ include.url | default: site.baseurl_permalink }}">{{ include.text }}</a></span>
+	{%- endif -%}
+</footer>
