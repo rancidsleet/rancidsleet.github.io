@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap" crossorigin>
   <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/rouge.css' | relative_url }}">
+  {%- capture canonical_url %}{{ site.canonical_url }}{{ page.url }}{% endcapture %}
+  <link rel="canonical" href="{{ page.canonical | default: canonical_url }}">
 </head>
 <body>
   <header>

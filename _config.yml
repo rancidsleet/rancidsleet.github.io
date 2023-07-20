@@ -1,5 +1,6 @@
 title: rancidsleet
 baseurl: "/" # the subpath of your site, e.g. /blog
+canonical_url: https://rancidsleet.github.io
 
 baseurl_permalink: "/"
 
