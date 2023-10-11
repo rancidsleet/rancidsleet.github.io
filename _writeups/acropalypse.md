@@ -8,15 +8,18 @@ The breakthrough of the [aCropalypse vulnerability](https://en.wikipedia.org/wik
 
 I've combined three such challenges into a single writeup for the sake of analysis by juxtaposition. Before going onto them, here's a few rough notes on the PNG file format.
 
+
 {% capture table %}
 - [Preface](#preface)
 - [WaniCTF 2023: apocalpyse](#wanictf-2023-apocalpyse)
 - [robot underdog](#robot-underdog)
 - [SEECTF 2023: acrophobia](#seectf-2023-acrophobia)
+- [AllesCTF 2023: redacted](../allesctf-redacted/)
 {% endcapture %}
 
 {%- include table_of_contents.html contents=table %}
 
+*"August" 2023 update: added "[redacted](../allesctf-redacted/)": yet another acropalypse challenge, but with jpeg instead of png.*
 
 ## Preface
 
